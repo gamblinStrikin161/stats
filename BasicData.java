@@ -59,20 +59,6 @@ public class BasicData {
 	 * @return: None
 	 * @throws: Nothing is implemented
 	 */
-	public void sortNums(float nums[]){
-		int n = nums.length;		//This is for looks
-		float temp = 0;				//this will hold the value of an array number
-		
-		for(int i = 0; i < n; ++i){			
-			for(int j = 1; j < (n - i); j++){
-				if(nums[j-1] > nums[j]){   //Compare array[0] & array[1]
-					temp = nums[j-1];	   //If array[0] > array [1] swap it
-					nums[j-1] = nums[j];   //Repeat the same steps for array[1] to array[n-1]
-					nums[j] = temp;		  
-				}//end of if statement
-			}//end of 'j' for loop
-		}//end of 'i' for loop
-	}//end of calculateMode method
 	
 	/**
 	 * This method accepts an array of values sorted in low-high order.
@@ -100,5 +86,12 @@ public class BasicData {
 	public float getMedian(){
 		return median;
 	}//end of getMedian method
-	
+
+	public float getMode() {
+		return mode;
+	}
+
+	public void calculateMode(float[] number) {
+		
+	}
 }//end of class BasicData
